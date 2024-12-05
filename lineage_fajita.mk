@@ -39,3 +39,20 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OnePlus6T \
     SystemDevice=OnePlus6T \
     SystemName=OnePlus6T
+
+# RisingOS Flags
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+WITH_GMS := false
+RISING_PACKAGE_TYPE := "VANILLA_AOSP"
+TARGET_PREBUILT_GOOGLE_CAMERA := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+
+# Inherit RisingOS configurations.
+RISING_MAINTAINER = Susanoo
+
+# Add Official Stuff
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Qualcomm Snapdragon 845" \
+    RisingMaintainer="Susanoo"
