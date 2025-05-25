@@ -26,7 +26,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 #FLAGS
 WITH_GMS := true
-TARGET_USES_MINI_GAPPS := true
+TARGET_USES_PICO_GAPPS := true
 TARGET_HAS_UDFPS := true
 
 PRODUCT_NAME := lineage_fajita
